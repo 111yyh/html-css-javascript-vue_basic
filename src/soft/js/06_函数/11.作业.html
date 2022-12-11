@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.输入任意两个数字的任意算术运算，并弹出运算后的结果
+        // var num1 = prompt('输入第一个数字:');
+        // var num2 = prompt('输入第二个数字:');
+        // var re;
+        // var action = prompt('请输入您要的操作:\n1.加法\n2.减法\n3.乘法\n4.除法');
+        // function getResult(num1, num2) {
+        //     switch (action) {
+        //         case '1':
+        //             re = parseFloat(num1) + parseFloat(num2);
+        //             break;
+        //         case '2':
+        //             re = num1 - num2;
+        //             break;
+        //         case '3':
+        //             re = num1 * num2;
+        //             break;
+        //         case '4':
+        //             re = num1 / num2;     
+        //             break;   
+        //     }
+        //     return re;
+        // }
+        // alert('结果是' + getResult(num1, num2));
+
+        //2.输入任意两个数 求最大值 并弹出运算后的结果
+        // var num1 = prompt('输入第一个数字:');
+        // var num2 = prompt('输入第二个数字:');
+        // var max;
+        // function getMax(num1, num2) {
+        //     max = num1 > num2 ? num1 : num2;
+        //     return max;
+        // }
+        // alert('最大值是' + getMax(num1, num2));
+
+        //3.输入三个不同数字 求最大值  并弹出结果
+        // var num1 = prompt('输入第一个数字:');
+        // var num2 = prompt('输入第二个数字:');
+        // var num3 = prompt('输入第三个数字:');
+        // var n1 = parseFloat(num1);
+        // var n2 = parseFloat(num2);
+        // var n3 = parseFloat(num3);
+        // function getMax(arr) {
+        //     var max = arr[0];
+        //     for (var i = 1; i < arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // alert('最大值是' + getMax([n1, n2, n3]));
+
+        //4.输入一个数 判断是否是素数 并弹出结果  素数 ：能被1 和自身整除的数
+        var num = prompt('输入数字:');
+        function getResult(num) {
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    return '不是素数';
+                }else{
+                    return '是素数';
+                }
+            }
+        }
+        alert(getResult(num));
+ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

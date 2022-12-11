@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>网易新闻列表</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+        .outer{
+            width: 300px;
+            height: 324px;
+            margin: 35px auto;
+            background-color: #FEFEFE;
+        }
+        .inner1{
+            width: 300px;
+            height: 41px;
+            line-height: 41px;
+            border-top: 1px solid #ddd;
+        }
+        .title{
+            display: inline-block;
+            border-top: 1px solid red;
+            margin-top: -1px;
+        }
+        .title a{
+            color: black;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+        }
+
+        .img{
+            height: 150px;
+        }
+        /* 设置图片的文字效果 */
+        .img .img-title{
+            /* 向上移动文字 */
+            margin-top: -30px;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        /* 设置新闻列表 */
+        .list{
+            margin-top: 15px;
+            /* padding-left: 14px; */
+
+            /* 设置项目符号 */
+            /* list-style: square; */
+        }
+
+        /* 通过before伪元素，来为每一个li添加项目符号 */
+        .list li::before{
+            content: '■';
+            color: rgb(209, 208, 208);
+            margin-right: 4px;
+        }
+
+        /* 设置li */
+        .list li{
+            margin-bottom: 10px;
+        }
+        .list li a{
+            font-size: 14px;
+            color: #666;
+        }
+        .list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">
+            <h2 class="title">
+                <a href="#">体育</a>
+            </h2>
+        </div>
+        <div class="img">
+            <a href="#">
+                <img src="./img/11.jpg" alt="">
+                <!-- 图片标题 -->
+                <h3 class="img-title">
+                    费德勒首负迪米 扶额头不满发挥
+                </h3>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">76岁禅师罕见观战 湖人新版"权力的游戏"即</a>
+            </li>
+            <li>
+                <a href="#">李娜：一起成长，我和孩子们都已准备好</a>
+            </li>
+            <li>
+                <a href="#">我只是希望不要再被骂了！</a>
+            </li>
+            <li>
+                <a href="#">冰墩墩还能火多久？看看8年前的“过气网</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

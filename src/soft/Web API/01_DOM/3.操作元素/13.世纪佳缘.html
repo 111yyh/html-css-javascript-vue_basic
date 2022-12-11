@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ww {
+            outline-color: #FFD6D8;
+        }
+    </style>
+</head>
+<body>
+    <!-- 用户名显示隐藏 -->
+    <div class="login">
+        <input type="text" class="ipt" value="邮箱/ID/手机号">
+    </div>
+    <script>
+        var ipt = document.querySelector('.ipt');
+        ipt.onfocus = function () {
+            this.value = '';
+            this.className = 'ipt ww'
+        }
+        ipt.onblur = function () {
+            this.value = '邮箱/ID/手机号';
+        }
+    </script>
+</body>
+</html>

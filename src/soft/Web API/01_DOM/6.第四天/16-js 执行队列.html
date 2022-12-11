@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 
+    同步：按顺序执行任务
+    异步：同一时间执行多个任务
+ -->
+<body>
+    <script>
+        // 第一个问题
+        // console.log(1);
+
+        // setTimeout(function() {
+
+        //     console.log(3);
+
+        // }, 1000);
+
+        // console.log(2);
+
+
+
+        // 2. 第二个问题
+        // 同步任务：同步任务都在主线程上完成，形成一个执行栈
+        // 异步任务：异步是通过回调函数实现的。异步任务有以下三种，普通事件：click，resize；资源加载：load，error；定时器：setInterval，setTimeout
+        
+        // console.log(1);
+
+        // setTimeout(function() {
+
+        //     console.log(3);
+
+        // }, 0);
+
+        // console.log(2);
+
+
+
+        // 3. 第三个问题
+        // 由于主线程不断的重复获取任务、执行任务、再获取任务、再执行，这种机制称为事件循环
+        
+        console.log(1);
+        document.onclick = function() {
+            console.log('click');
+        }
+        console.log(2);
+        setTimeout(function() {
+            console.log(3)
+        }, 3000)
+    </script>
+</body>
+
+</html>

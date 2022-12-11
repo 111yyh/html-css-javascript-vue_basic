@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        小米商城 - Xiaomi 11 Ultra、Redmi K40 Pro、MIX FOLD，小米电视官方网站
+    </title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <!-- 引入当前页面的样式表 -->
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <style>
+        .top-bar-wrapper {
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            line-height: 40px;
+        }
+
+        .topbar {
+            width: 1226px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .bar-wrapper-left li {
+            float: left;
+        }
+
+        .bar-wrapper-left a,
+        .bar-wrapper-right a,
+        .shop a {
+            font-size: 12px;
+            color: #b0b0b0;
+            text-decoration: none;
+        }
+
+        .topbar .line {
+            width: 1px;
+            height: 13px;
+            background-color: #424242;
+            margin: 14px 8px;
+        }
+
+        .shop {
+            float: right;
+        }
+
+        .bar-wrapper-right {
+            float: right;
+        }
+
+        .bar-wrapper-right li {
+            float: left;
+        }
+
+        .bar-wrapper-left a:hover,
+        .bar-wrapper-right a:hover {
+            color: #FFF;
+        }
+
+        .bar-wrapper-right .left {
+            padding-right: 25px;
+        }
+
+        .shop a {
+            display: block;
+            width: 120px;
+            height: 40px;
+            background-color: #424242;
+            text-align: center;
+        }
+
+        .shop:hover a {
+            background-color: #fff;
+            color: #FF6700;
+        }
+
+        .shop .info {
+            /* display: none; */
+            text-align: center;
+            width: 396px;
+            /* height: 126px; */
+            height: 0;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            color: #424242;
+            position: absolute;
+            top: 40px;
+            left: 830px;
+            z-index: 999;
+            transition: height 0.3s;
+        }
+
+        .shop:hover .info {
+            display: block;
+            height: 126px;
+        }
+
+        .app:hover .ewm,
+        .app:hover::after {
+            display: block;
+            height: 187px;
+        }
+
+        .ewm {
+            /* display: none; */
+            width: 157px;
+            /* height: 187px; */
+            height: 0;
+            overflow: hidden;
+            background-color: #fff;
+            vertical-align: middle;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            position: absolute;
+            top: 40px;
+            left: 520px;
+            z-index: 999;
+
+            /* transition 设置过渡效果 */
+            transition: height 0.3s;
+        }
+
+        .ewm img {
+            display: block;
+            margin: 20px auto 10px;
+        }
+
+        .ewm div {
+            text-align: center;
+        }
+
+        .ewm:hover .app>a {
+            color: #fff;
+        }
+
+        .bar-wrapper-left .app:hover .ewm {
+            display: block;
+        }
+
+        .app .fas {
+            display: none;
+            color: #FCFCFC;
+            position: absolute;
+            top: 31px;
+            left: 580px;
+        }
+
+        .app:hover .fa-caret-up {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航条 -->
+    <div class="top-bar-wrapper">
+        <div class="topbar">
+            <ul class="bar-wrapper-left">
+                <li><a href="Javascript:;">小米商城</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">MIUI</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">loT</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">云服务</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">金融</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">精品</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">小爱开放平台</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">企业团购</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">资质证照</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">协议规则</a></li>
+                <li class="line"></li>
+                <li class="app">
+                    <a href="Javascript:;">下载app</a>
+                    <div class="ewm">
+                        <img src="./img/ewm.png" alt="">
+                        <div>小米商城APP</div>
+                    </div>
+                    <div class="fas fa-caret-up"></div>
+                </li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">Select Location</a></li>
+            </ul>
+
+            <ul class="shop">
+                <li><a href="Javascript:;">
+                        <i class="fas fa-shopping-cart"></i>
+                        购物车（0）
+                    </a></li>
+                <div class="info">
+                    购物车中还没有商品，赶紧选购吧！
+                </div>
+            </ul>
+
+            <ul class="bar-wrapper-right">
+                <li><a href="Javascript:;">登录</a></li>
+                <li class="line"></li>
+                <li><a href="Javascript:;">注册</a></li>
+                <li class="line"></li>
+                <li class="left"><a href="Javascript:;">消息通知</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //字符串对象  根据字符返回位置  str.indexOf('要查找的字符',[起始的位置]])
+        // var str = '改革春风吹满地，春天';
+        // console.log(str.indexOf('春'));
+        // console.log(str.indexOf('春',3));//从索引号为3 的位置往后查找
+
+
+        //查找字符串'abcoefoxyozzopp'中所以o出现的位置以及次数
+        // var str1 = 'abcoefoxyozzopp';
+        // var index = str1.indexOf('o');
+        // var num = 0;
+        // // console.log(index);
+        // while (index !== -1) {
+        //     console.log(index);
+        //     num++;
+        //     index = str1.indexOf('o',index + 1);
+        // }
+        // console.log('o出现的次数：' + num);
+
+
+        //['red', 'blue', 'red', 'green', 'pink', 'red'] 求red出现的位置和次数
+        var arr = ['red', 'blue', 'red', 'green', 'pink', 'red'];
+        var index = arr.indexOf('red');
+        var num = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (index != -1) {
+                console.log(index);
+                num++;
+                index = arr.indexOf('red',index + 1);
+            }
+        }
+        console.log('red出现的次数：' + num);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //给定一个字符串  ‘abaasdffggghhjjkkgfddsssss3444343’ 
+        // 1.字符串的长度
+        // function getLength(str) {
+        //     return str.length;
+        // }
+        // console.log(getLength('abaasdffggghhjjkkgfddsssss3444343'));
+
+
+        // 2.取出指定位置的字符，‘0，3，5，9’
+        // function getChar(num) {
+        //     var str = 'abaasdffggghhjjkkgfddsssss3444343';
+        //     return str.charAt(num);
+        // }
+        // console.log(getChar(0));
+        // console.log(getChar(3));
+        // console.log(getChar(5));
+        // console.log(getChar(9));
+        
+
+        // 3.查找指定字符是否在以上字符串中存在，如‘i，c，b’
+        // var str = 'abaasdffggghhjjkkgfddsssss3444343';
+        // var str1 = prompt('输入字符：');
+        // if (str.indexOf(str1) !== -1) {
+        //     console.log('存在该字符');
+        // } else {
+        //     console.log('不存在');
+        // }
+
+
+        // 4.替换指定的字符，如g替换为22，ss替换为b
+        // var str = 'abaasdffggghhjjkkgfddsssss3444343';
+        // var start = prompt('输入被替换的字符');
+        // var end = prompt('输入替换的字符');
+        // while (str.indexOf(start) !== -1) {
+        //     str = str.replace(start, end);
+        // }
+        // console.log(str);
+
+
+        // 5.截取指定开始位置到结束位置的字符串，如取得1-5的字符串
+        // var str = 'abaasdffggghhjjkkgfddsssss3444343';
+        // console.log(str.slice(0,5));
+
+
+        // 6.找出以上字符串中出现次数最多的字符和出现的次数
+        var str = 'abaasdffggghhjjkkgfddsssss3444343';
+        var obj = {};
+        for (var i = 0; i <= str.length; i++) {
+            var chars = str.charAt(i);
+            if (obj[chars]) {
+                obj[chars]++;
+            } else {
+                obj[chars] = 1;
+            }
+        }
+        
+        var max = 0;
+        var ch = '';
+        for (var k in obj) {
+            if (obj[k] > max) {
+                max = obj[k];
+                ch = k;
+            }
+        }
+        console.log('出现次数最多的是' + ch);
+        console.log('次数是' + max);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

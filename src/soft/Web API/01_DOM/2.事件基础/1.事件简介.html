@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // JavaScript 使我们有能力创建动态页面，而事件是可以被JavaScript侦测到的行为
+        // 触发--响应机制
+        // 网页中的每个元素可以产生某个可以触发JavaScript的事件，例如，我们可以在用户点击某按钮时产生一个事件，然后去执行某些操作
+    </script>
+</head>
+<body>
+    <button id="btn">唐伯虎</button>    
+    <script>
+        //点击按钮，弹出对话框
+        // 1.事件是由三个部分组成   事件源  事件类型   事件处理程序  我们也称为事件三要素
+        // (1)事件源  事件被触发的对象  
+        var btn = document.getElementById('btn');
+        // (2)事件类型  如何触发  什么事件  比如鼠标点击(onclick) 鼠标经过 键盘按下
+        // (3)事件处理程序  通过一个函数赋值的方式  完成
+        btn.onclick = function() {
+            alert('点秋香');
+        }
+
+    </script>
+</body>
+</html>

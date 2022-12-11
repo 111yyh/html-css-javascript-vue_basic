@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var com = {
+        //     color : '黑色',
+        //     weight : '120g',
+        //     brand : '华硕',
+        //     type : 'cpu',
+        //     work : function(act) {
+        //         console.log(act);
+        //     }
+        // }
+        // console.log(com.color);
+        // console.log(com.weight);
+        // console.log(com.brand);
+        // console.log(com.type);
+        // com.work('看电影');
+
+
+        // var but = new Object();
+        // but.width = '120px';
+        // but.height = '50px';
+        // but.bgc = 'red';
+        // but.action = function(act){
+        //     console.log(act);
+        // };
+        // console.log(but.width);
+        // console.log(but.height);
+        // console.log(but.bgc);
+        // but.action('变色');
+
+
+        // function Car(weight, color, brand) {
+        //     this.weight = weight;
+        //     this.color = color;
+        //     this.brand = brand;
+        //     this.work = function(act){
+        //         console.log(act);
+        //     }
+        // }
+        // var toyota = new Car('50t', 'black', '丰田');
+        // console.log(toyota.weight);
+        // console.log(toyota.color);
+        // console.log(toyota.brand);
+        // toyota.work('载人');
+
+        //翻转数组
+        // function reverse(arr) {
+        //     var newArr = [];
+        //     for (var i = arr.length - 1; i >=0; i--) {
+        //         newArr[newArr.length] = arr[i];
+        //     }
+        //     return newArr;
+        // }
+        // console.log('反转数组前:');
+        // console.log('反转数组后' + reverse([1,2,5,8,6,4,2,0]));
+
+        //数组排序（冒泡排序）
+        function sort(arr) {
+            for (var i = 1; i <= arr.length - 1; i++) {
+                for (var j = 0; j <= arr.length - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        console.log(sort([2, 4, 89, 1, 0, 3666, 36, 77, 12]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
